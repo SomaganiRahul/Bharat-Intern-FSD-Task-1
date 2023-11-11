@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fitness Club | Admin Update Members</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Fitness Club</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="plans.html">Plans</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="members.html">Members</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Welcome Rahul</a></li>
+            <li><a href="login.html">Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+              <h1><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Update Member </h1>
+          </div>
+          <div class="col-md-2">
+                <div class="dropdown create" id="dropdown-menu">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Create Content
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a type="button" data-toggle="modal" data-target="#addPlan">Add Plan</a></li>
+                      <li><a href="#">Add Notification</a></li>
+                      <li><a type="button" data-toggle="modal" data-target="#addMember">Add Member</a></li>
+                  </ul>
+               </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Dashboard</a></li>
+          <li class="active">Update Member</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                  <div class="list-group">
+                        <a href="index.html" class="list-group-item active main-color-bg">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>&nbsp;&nbsp;Dashboard
+                        </a>
+                        <a href="plans.html" class="list-group-item"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>&nbsp;&nbsp;Plans <span class="badge">3</span></a>
+                        <a href="notifications.html" class="list-group-item"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span>&nbsp;&nbsp;Notifications <span class="badge">6</span></a>
+                        <a href="members.html" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Members <span class="badge">12</span></a>
+                  </div>
+
+                  <div class="well">
+                        <h5>Memberships</h5>
+                        <div class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                60%
+                              </div>
+                        </div>
+                        <h5>Reviews</h5>
+                        <div class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                                75%
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="col-md-9">
+              <!--Statistics-->
+                  <div class="panel panel-default">
+                      <div class="panel-heading main-color-bg">
+                          <h3 class="panel-title">Update Member</h3>
+                      </div>
+                      <div class="panel-body">
+                        <form>
+                              <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Name">
+                              </div>
+                              <div class="form-group">
+                                <label>Contact</label>
+                                <input type="tel" class="form-control" placeholder="Contact Number">
+                              </div>
+                              <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" class="form-control" placeholder="Email">
+                              </div>
+                              <div class="form-group">
+                                <label>Address</label>
+                                <textarea class="form-control" placeholder="Address"></textarea>
+                              </div>
+                              <div class="form-group">
+                                <label>City</label>
+                                <input type="text" class="form-control" placeholder="City">
+                              </div>
+                         <div class="modal-footer">
+                           <button type="submit" class="btn btn-success">Update</button>
+                         </div>
+                        </form>
+                      </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+     <footer>
+        <div class="container main-color-bg">
+           <p>Fitness Club, Copyright &copy; 2023</p>
+        </div>
+     </footer>
+
+       <!--Modals-->
+       <!--Add Plans-->
+       <div class="modal fade" id="addPlan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <form>
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title" id="myModalLabel">Add Plan</h4>
+                            </div>
+                            <div class="modal-body">
+                               <div class="form-group">
+                                 <labeL>Plan Title</labeL>
+                                 <input type="text" class="form-control" placeholder="Plan Title">
+                               </div>
+                               <div class="form-group">
+                                 <labeL>Plan Body</labeL>
+                                 <textarea name="editor1" class="form-control"></textarea>
+                               </div>
+                               <div class="checkbox">
+                                 <label>
+                                   <input type="checkbox"> Approved
+                                 </label>
+                               </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              <button type="submit" class="btn btn-primary">Save changes</button>
+                            </div>
+                    </form>
+                  </div>
+            </div>
+      </div>
+      <!--Add Member-->
+      <div class="modal fade" id="addMember" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+           <div class="modal-dialog" role="document">
+                 <div class="modal-content">
+                   <form>
+                           <div class="modal-header">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                             <h4 class="modal-title" id="myModalLabel">Add Member</h4>
+                           </div>
+                           <div class="modal-body">
+                                <div class="form-group">
+                                  <labeL>Username</labeL>
+                                  <input type="text" class="form-control" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                  <labeL>Password</labeL>
+                                  <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                  <label>Name</label>
+                                  <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                  <label>Contact</label>
+                                  <input type="tel" class="form-control" placeholder="Contact Number">
+                                </div>
+                                <div class="form-group">
+                                  <label>Email</label>
+                                  <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                  <label>Address</label>
+                                  <textarea class="form-control" placeholder="Address"></textarea>
+                                </div>
+                                <div class="form-group">
+                                  <label>City</label>
+                                  <input type="text" class="form-control" placeholder="City">
+                                </div>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="submit" class="btn btn-primary">Add Member</button>
+                           </div>
+                   </form>
+                 </div>
+           </div>
+     </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+			CKEDITOR.replace( 'editor1' );
+		</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

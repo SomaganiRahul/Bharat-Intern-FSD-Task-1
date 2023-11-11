@@ -1,0 +1,172 @@
+zbody{
+    font-family: 'Libre Baskerville', serif;
+    line-height: 1.5;
+    font-size: 15px;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+/*container*/
+.container{
+  width: 80%;     /*not set in pixals and set according to % since the page needs to be responsive*/
+  margin: auto;
+  overflow: hidden;  /*very important*/
+}
+.button_1{
+  height: 36px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 20px 0 20px;
+  background-color: #0BA43B;
+  color: black;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.button_1:hover{
+  border: 1px solid #0BA43B;
+  background-color: white;
+  transition-duration: .5s;
+}
+.dark{
+  padding: 15px;
+  background-color: #96D6EF;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+header{
+  background: #4A91DD;
+  padding: 10px;
+  min-height: 70px;  /*sets a minimum height as the page is responsive*/
+  border-bottom: #4AC2DD 3px solid;
+}
+/*header links*/
+header a{
+  color: #D0EAEF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+/*navigation pane*/
+header ul{
+  padding: 0;
+  margin: 0;
+}
+header li{
+  float: left;      /*display list items in one line*/
+  display: inline;  /*removes bullets*/
+  padding: 0 20px 0 20px;
+}
+header #branding{
+  float:left;
+}
+header #branding img{
+  margin:0;
+}
+header nav{
+  float:right;
+  margin-top: 60px;
+}
+header .current a{
+  color: #6FD7EE;
+  font-weight: bold;
+}
+header a:hover{
+  color: #24B0CF;
+  font-weight: bold;
+}
+/*showcase styling*/
+#showcase{
+  margin-top: 0;
+  min-height: 400px;
+  background: url('../img/blue-gym-background.jpg') no-repeat;
+  background-size: 100%;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: #4AC2DD 3px solid;
+}
+#showcase h1{
+  margin-top: 100px;
+  color: #0e1111;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+#showcase p{
+  font-size: 20px;
+}
+/*newsletter styling*/
+#newsletter{
+  background-color:  #3377BF;
+  color: #ffffff;
+  border-bottom: #4AC2DD 3px solid;
+  padding:10px;
+}
+#newsletter h1{
+  float: left;
+}
+#newsletter form{
+  float: right;
+  margin-top: 25px;
+}
+#newsletter input[type="email"]{
+  padding: 5px;
+  height: 25px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  outline: 0;
+  background-color: #CFD9E4;
+  font-family: cursive;
+  font-weight: bold;
+}
+/*boxes styling*/
+#boxes{
+  margin-top: 20px;
+}
+#boxes .box{
+  float: left;
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+}
+/*sidebar styling*/
+#sidebar{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+/*article styling*/
+#main-col{
+  margin-top: 10px;
+  float: left;
+  width: 65%;
+}
+/*bmr styling*/
+#bmr input[type=text]{
+  padding: 5px;
+  height: 25px;
+  width: 120px;
+  border-radius: 5px;
+  border: none;
+  outline: 0;
+  background-color: #CFD9E4;
+  font-family: cursive;
+  font-weight: bold;
+  text-align: right;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+#bmr div{
+  padding: 8px;
+}
+#bmr label{
+  float: left;
+  width:55px;
+}
+/*footer styling*/
+footer{
+  margin-top: 20px;
+  padding: 10px;
+  background-color:  #3377BF;
+  color: #ffffff;
+  text-align: center;
+}

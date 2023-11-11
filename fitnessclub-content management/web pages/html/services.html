@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="description" content="We specialize in providing perfect 'Fitness'"/>
+    <meta name="keywords" content="fitness club,fitness,exercise regimes"/>
+    <meta name="author" content="Priyank Hajela"/>
+    <title>Fitness Club | Services</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Ubuntu:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/bmr.js"></script>
+  </head>
+
+  <body>
+       <header>
+          <div class="container">
+              <div id="branding">
+                <img src="../img/logo.png" alt="logo" height="140px" width="250px"/>
+              </div>
+              <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li class="current"><a href="services.html">Services</a></li>
+                </ul>
+              </nav>
+          </div>
+       </header>
+
+       <section id="newsletter">
+         <div class="container">
+           <h1>Subscribe To Our Health Newsletter</h1>
+           <form action="process.php">
+             <input type="email" placeholder="Enter Email...">
+             <button type="submit" class="button_1">Subscribe</button>
+           </form>
+         </div>
+       </section>
+
+       <section id="main">
+         <div class="container">
+             <article id="main-col">
+               <h1 class="page-title">Services</h1>
+               <ul id="services">
+                   <li>
+                     <h3>Individual Diet Plans</h3>
+                     <p>Enjoy a 30 day free-trial period. Thereafter, you may continue the service by paying
+                       a bare minimum fee on bi-monthly basis. You get a personalised diet expert who would
+                       assess your daily eating habits and plan out a healthy diet plan.</p>
+                     <p>Bi-monthly fees:  ₹ 2000<br>
+                        Annual fees: ₹ 15000</p>
+                   </li>
+                   <li>
+                     <h3>Individual Exercise Regimes</h3>
+                     <p>Enjoy a 2 week free-trial period. Thereafter, you may wish continue and we would assign a
+                        personalised trainer to you. Our experienced trainers assist you in working-out those muscles.
+                        In no time, you'll be turn from fat to fit.</p>
+                     <p>Bi-monthly fees:  ₹ 8000<br>
+                        Annual fees: ₹ 120000</p>
+                   </li>
+                   <li>
+                     <h3>Health newsletter and Daily tips</h3>
+                     <p>Subscribe to our newsletter and get daily tips on how to stay healthy and lead a vigorous lifestyle.
+                        Enrich yourselves with the knowledge of 'Nutrition' and 'Fitness' by taking part in the 'Nutrition Quizes' and
+                        much more. </p>
+                     <p>Free of cost !!!</p>
+                   </li>
+               </ul>
+             </article>
+
+             <aside id="sidebar">
+               <div  class="dark">
+                   <h1>Basal Metabolic Rate (BMR) Calculator</h1>
+                   <form name="bmr" id="bmr">
+                     <div>
+                       <label>Age</label>
+                       <input type="text" name="age"><br/>
+                     </div>
+                     <div>
+                       <label>Gender</label>
+                       &nbsp;&nbsp;
+                       <input type="radio" name="sex" value="Male">Male
+                       &nbsp;&nbsp;&nbsp;
+                       <input type="radio" name="sex" value="Female">Female<br/>
+                     </div>
+                     <div>
+                       <label>Height</label>
+                       <input type="text" name="height">centimeters<br/>
+                     </div>
+                     <div>
+                       <label>Weight</label>
+                       <input type="text" name="weight">kilograms<br/>
+                     </div>
+                     <div>
+                       <input type="submit" class="button_1" onclick="calculate();" value="Calculate"><br/>
+                     </div>
+                     <div>
+                       <label>BMR:</label>
+                       <input type="text" id="bmr_result">calories/day
+                     </div>
+                   </form>
+               </div>
+             </aside>
+         </div>
+       </section>
+       <footer>
+             <p>Fitness Club, Copyright &copy; 2023</p>
+       </footer>
+  </body>
+</html>
